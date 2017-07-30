@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title API Basejump | Timestamp microservice
+    link(rel = 'shortcut icon' 
+    href = ref="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" 
+    type="image/x-icon")
+    link(
+    href="https://fonts.googleapis.com/css?family=Roboto" 
+    rel="stylesheet" 
+    type="text/css")
+    link(href="public/style.css" 
+    rel="stylesheet" 
+    type="text/css")
+body
+  div(class="container")
+    h1 API Basejump: Timestamp microservice
+    h3 Part 1 of Free Code Camp Backend Challenges
+    h2 Example Input
+    pre
+      ul
+        each val in example.input
+          li
+            a(href=val.split("/").slice(1,val.split("/").length) .join("/")
+            target="_blank")
+              span= val
+    h2 Example Output
+    pre
+      ul
+        each val in example.output
+          li
+           span=val
+            
+    
+        
